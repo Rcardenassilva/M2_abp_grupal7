@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/ecommercestyles.css" />
+    <title>Pago</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div style="display: flex; gap: 10px">
+          <img
+            src="https://t4.ftcdn.net/jpg/03/97/36/75/360_F_397367515_GYSuQtv6HDhvbkodzHXko2Of7Wb6mRes.jpg"
+            alt="logo"
+            class="logo"
+          />
+          <h1 class="h1-logo">ACDC</h1>
+        </div>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./purshase.html">Cómo comprar</a></li>
+          <li><a href="./brands.html">Nuestras marcas</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="h1-pagos">Pagos y Transferencias</h1>
+
+        <div class="payment-inputs">
+          <div>
+            <label for="name">Nombre</label>
+            <input type="text" id="name"required />
+          </div>
+          <div>
+            <label for="cardnum">Número de tarjeta</label>
+            <input type="text" id="cardnum"required  />
+          </div>
+          <div>
+            <label for="date">Fecha de expiración</label>
+            <input type="text" id="date" required />
+          </div>
+          <div>
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv"  required/>
+          </div>
+          <div>
+            <label for="adress">Dirección de envío</label>
+            <input type="text" id="adress"  required/>
+          </div>
+          <div>
+            <label for="phone">Teléfono</label>
+            <input type="text" id="phone"  required />
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button class="btn btn-primary" onclick="PagoExitoso()">Pagar</button>
+        </div>
+    </main>
+    <script src="js/logica.js"></script>
+  </body>
+</html>

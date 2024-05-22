@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/ecommercestyles.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div style="display: flex; gap: 10px">
+                <img src="https://t4.ftcdn.net/jpg/03/97/36/75/360_F_397367515_GYSuQtv6HDhvbkodzHXko2Of7Wb6mRes.jpg"
+                    alt="logo" class="logo" />
+                <h1 class="h1-logo">ACDC</h1>
+            </div>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./purshase.html">Cómo comprar</a></li>
+                <li><a href="./brands.html">Nuestras marcas</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style=" width: 90%;">
+        <h1>Estadísticas</h1>
+        <form action="" style=" width: 90%;" >
+            <table id="example" class="display">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cod Producto</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Vendidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Polera</td>
+                        <td>P001</td>
+                        <td>15000</td>
+                        <td>22</td>
+                        <td>152</td>
+                    </tr>
+                    <tr>
+                        <td>Pantalon  Jeans</td>
+                        <td>PJ002</td>
+                        <td>15990</td>
+                        <td>1</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>Zapatilla Nike </td>
+                        <td>ZN003</td>
+                        <td>36990</td>
+                        <td>20</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <td>Calzon  de hierro fundido</td>
+                        <td>CHF003</td>
+                        <td>12590</td>
+                        <td>200</td>
+                        <td>1580</td>
+                    </tr>
+                    <tr>
+                        <td>Chaleco Polar Negro</td>
+                        <td>CPN225</td>
+                        <td>10590</td>
+                        <td>10</td>
+                        <td>2550</td>
+                    </tr>
+                    <tr>
+                        <td>Elastica Lengueta Personal Negro</td>
+                        <td>ELPN005</td>
+                        <td>15690</td>
+                        <td>1</td>
+                        <td>259</td>
+                    </tr>
+                    <tr>
+                        <td>Pantalon Cuero Negro</td>
+                        <td>PCN5520</td>
+                        <td>52690</td>
+                        <td>201</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Gorro de látex y poliuretano</td>
+                        <td>GPLP1313</td>
+                        <td>5260</td>
+                        <td>20</td>
+                        <td>5201</td>
+                    </tr>
+                    <tr>
+                        <td>Bolso de Mano Piel de Dalmata</td>
+                        <td>BMPD031</td>
+                        <td>25090</td>
+                        <td>20</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Pierna Robotica Alexa</td>
+                        <td>PRA290</td>
+                        <td>1258090</td>
+                        <td>20</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+</body>
+
+</html>
